@@ -17,5 +17,6 @@ namespace RazorPagesMovie.Models
 
         [DataType(DataType.Currency)]
         public decimal Price { get; set; }
+        public string Rating { get; set; }
     }
 }

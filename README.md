@@ -30,7 +30,7 @@
 	3. A tag __RenderBody__ é um espaço reservado em que todas as exibições específicas da página são mostradas, encapsuladas na página de layout. 
 
 * No arquivo Create.cshtml:
-	1. O elemento ´´´form method="post"´´´ é um [auxiliar de marcas de formulário](https://docs.microsoft.com/pt-br/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-5.0#the-form-tag-helper). O auxiliar de marcas de formulário inclui automaticamente um [token antifalsificação](https://docs.microsoft.com/pt-br/aspnet/core/security/anti-request-forgery?view=aspnetcore-5.0).
+	1. O elemento ```<form method="post">``` é um [auxiliar de marcas de formulário](https://docs.microsoft.com/pt-br/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-5.0#the-form-tag-helper). O auxiliar de marcas de formulário inclui automaticamente um [token antifalsificação](https://docs.microsoft.com/pt-br/aspnet/core/security/anti-request-forgery?view=aspnetcore-5.0).
 
 * Banco de dados
 	1. O ASP.NET Core de configuração de dados lê a __ConnectionString__ chave. Para o desenvolvimento local, a configuração obtém a cadeia de conexão do __appsettings.json__ do arquivo.
@@ -38,6 +38,6 @@
 	3. O Visual Studio possui a ferramenta __SQL Server Object Explorer__
 
 * No arquivo Index.cshtml.cs:
-	1. ´´´[BindProperty]´´´ associa valores de formulário e cadeias de consulta ao mesmo nome da propriedade. 
-	2. ´´´SelectList´´´ permite que o usuário selecione um item na lista.
-		* Exige ´´´using Microsoft.AspNetCore.Mvc.Rendering;´´´.
+	1. ```[BindProperty]``` associa valores de formulário e cadeias de consulta ao mesmo nome da propriedade. 
+	2. ```SelectList``` permite que o usuário selecione um item na lista.
+		* Exige ```using Microsoft.AspNetCore.Mvc.Rendering;```.
