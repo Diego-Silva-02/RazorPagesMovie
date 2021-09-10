@@ -36,3 +36,8 @@
 	1. O ASP.NET Core de configuração de dados lê a __ConnectionString__ chave. Para o desenvolvimento local, a configuração obtém a cadeia de conexão do __appsettings.json__ do arquivo.
 	2. Quando o aplicativo é implantado em um servidor de teste ou de produção, uma variável de ambiente pode ser usada para definir a cadeia de conexão como um servidor de banco de dados de teste ou de produção.
 	3. O Visual Studio possui a ferramenta __SQL Server Object Explorer__
+
+* No arquivo Index.cshtml.cs:
+	1. ´´´[BindProperty]´´´ associa valores de formulário e cadeias de consulta ao mesmo nome da propriedade. 
+	2. ´´´SelectList´´´ permite que o usuário selecione um item na lista.
+		* Exige ´´´using Microsoft.AspNetCore.Mvc.Rendering;´´´.
