@@ -42,6 +42,14 @@
 	2. ```SelectList``` permite que o usuário selecione um item na lista.
 		* Exige ```using Microsoft.AspNetCore.Mvc.Rendering;```.
 
+* Difetença entre os atributos ```[DataType]``` e ```[DisplayFormat]```:
+	1. ```[DisplayFormat]```: Permite que seja configurada a formatação do tipo de dados (exemplo, data)
+	2. ```[DataType]```: transmite a semântica dos dados em vez de como renderizá-los em uma tela. 
+		* Vantagens do ```[Datatype]```:
+			1. O navegador pode habilitar recursos HTML5, por exemplo, para mostrar um controle de calendário, o símbolo de moeda apropriado à localidade, links de email etc.
+			2. Por padrão, o navegador renderiza dados usando o formato correto com base em sua localidade.
+			3. Pode permitir que a estrutura ASP.NET Core escolha o modelo de campo correto para renderizar os dados. O ```DisplayFormat``` , se usado por si só, usa o modelo de cadeia de caracteres.
+
 ### DRY (Don't Repeat Yourself')
 * Razor Pages incentivam o desenvolvimento em que a funcionalidade é especificada uma vez e é refletida em todo o aplicativo. O DRY pode ajudar a:
 	1. Reduzir a quantidade de código em um aplicativo.
