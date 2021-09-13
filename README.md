@@ -41,3 +41,16 @@
 	1. ```[BindProperty]``` associa valores de formulário e cadeias de consulta ao mesmo nome da propriedade. 
 	2. ```SelectList``` permite que o usuário selecione um item na lista.
 		* Exige ```using Microsoft.AspNetCore.Mvc.Rendering;```.
+
+### DRY (Don't Repeat Yourself')
+* Razor Pages incentivam o desenvolvimento em que a funcionalidade é especificada uma vez e é refletida em todo o aplicativo. O DRY pode ajudar a:
+	1. Reduzir a quantidade de código em um aplicativo.
+	2. Fazer com que o código seja menos propenso a erros e mais fácil de ser testado e mantido.
+
+* O suporte de validação fornecido pelas Razor Pages e pelo Entity Framework são um bom exemplo do princípio DRY:
+	1. As regras de validação são especificadas declarativamente em um único lugar, na classe de modelo.
+	2. As regras são impostas em todos os lugares do aplicativo.
+
+* Ter regras de validação impostas automaticamente por ASP.NET Core ajuda:
+	1. Tornar o aplicativo mais robusto.
+	2. Reduza as chances de salvar dados inválidos no banco de dados.
